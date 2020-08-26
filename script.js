@@ -6,7 +6,7 @@ const quiz = document.getElementById("quiz");
 const counter = document.getElementById("counter");
 
 
-let TIMER;
+let quizTime;
 let count = 20;
 const questionTime = 20; 
 start.addEventListener("click",startQuiz);
@@ -17,7 +17,7 @@ function startQuiz(){
     renderQuestion();
     quiz.style.display = "block";
     renderCounter();
-	TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
+ quizTime = setInterval(renderCounter,1000); // 1000ms = 1s
 	
 }
 
@@ -51,13 +51,14 @@ function renderQuestion(){
 }
 
 function renderCounter(){
-    if(count <= questionTime){
-        counter.innerHTML = count;
+    
+        counter.innerHTML = count + " sec left";
         
 		count--;
-		
-    }else{
-		count = 0;
+		if(count == -1){
+  
+		clearInterval(quizTime);
+		// count = 0;
 		
     }
 }
