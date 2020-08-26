@@ -55,7 +55,7 @@ function renderCounter(){
         counter.innerHTML = count + " sec left";
         
 		count--;
-		if(count == -1){
+		if(count <= -1){
   
 		clearInterval(quizTime);
 		// count = 0;
