@@ -1,0 +1,41 @@
+
+#start{
+    font-size: 1.5em;
+    width:700px;
+    height:300px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left:300px;
+    top:100px;
+    color: #000;
+}
+start:hover{
+    border: 3px solid lightseagreen;
+    color : lightseagreen;
+}
+
+div#test{padding:10px 40px 40px 40px; 
+position: absolute;
+left: 300px;
+top: 200px;
+
+}
+#test_status{ 
+position: absolute;
+left: 400px;
+top: 150px;
+font-size: 20px;
+
+}
+#timer{
+    float: right;
+    position: absolute;
+    right: 40px;
+    font-size: 20px;
+}
+
+
+
+
+
